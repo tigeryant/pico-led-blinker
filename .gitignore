@@ -1,0 +1,49 @@
+# -------------------------
+# Rust / Cargo
+# -------------------------
+/target
+**/*.rs.bk
+**/*.rmeta
+**/*.d
+**/*.o
+
+# If you vendor dependencies or use a workspace
+/Cargo.lock
+
+# -------------------------
+# Firmware artifacts
+# -------------------------
+*.elf
+*.bin
+*.hex
+*.uf2
+
+# Sometimes tools emit JSON or reports
+*.json
+*.rpt
+
+# -------------------------
+# Debuggers / tooling
+# -------------------------
+# e.g. probe-rs cache, GDB private files
+.probe-run/
+*.gdb
+
+# -------------------------
+# IDEs / Editors
+# -------------------------
+.vscode/
+.idea/
+*.sw?
+*~
+.DS_Store
+Thumbs.db
+
+# -------------------------
+# Other
+# -------------------------
+# Generated bindings (if any)
+src/bindings.rs
+
+# build scripts output (if you redirect)
+out/

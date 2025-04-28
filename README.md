@@ -1,2 +1,2 @@
 # pico-led-blinker
-Makes an LED on a Raspberry Pi Pico blink
+Makes an LED blink on a Raspberry Pi Pico

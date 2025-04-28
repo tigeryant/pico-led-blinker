@@ -1,0 +1,25 @@
+[package]
+name = "pico-led-blinker"
+version = "0.1.0"
+edition = "2024"
+
+[profile.release]
+codegen-units = 1
+incremental = false
+opt-level = "z"
+lto = true
+panic = "abort"
+
+[profile.dev]
+panic = "abort"
+
+[toolchain]
+channel = "nightly"
+targets = ["thumbv6m-none-eabi"]
+
+[dependencies]
+cortex-m = "0.7"
+cortex-m-rt = "0.7"
+embedded-hal = "0.2"
+rp-pico = "0.8.0"
+panic-halt = "0.2"
