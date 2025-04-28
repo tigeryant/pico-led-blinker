@@ -37,8 +37,8 @@ fn main() -> ! {
         &mut peripherals.RESETS,
     );
 
-    // The LED is connected to pin 25
-    let mut led_pin = pins.gpio25.into_push_pull_output();
+    // The LED is connected to pin 29
+    let mut led_pin = pins.gpio29.into_push_pull_output();
 
     loop {
         led_pin.set_high().unwrap();

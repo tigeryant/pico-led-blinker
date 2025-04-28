@@ -17,6 +17,11 @@ panic = "abort"
 channel = "nightly"
 targets = ["thumbv6m-none-eabi"]
 
+[[bin]]
+name = "pico-led-blinker"
+test = false
+bench = false
+
 [dependencies]
 cortex-m = "0.7"
 cortex-m-rt = "0.7"
